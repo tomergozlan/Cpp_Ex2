@@ -1,15 +1,14 @@
 /// Created by Tomer Gozlan on 24/03/2023.
 
+#include <iostream>
 #include "game.hpp"
 
 using namespace std;
 using namespace ariel;
 
 /// Constructor of the class game.
-Game::Game(Player p1, Player p2) {
-    this->player1 = p1;
-    this->player2 = p2;
-}
+Game::Game(Player player1, Player player2) : player1(player1) , player2(player2) {}
+
 ///
 void Game::playTurn() {
     // TODO: Implement the function.

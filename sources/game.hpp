@@ -3,6 +3,7 @@
 #ifndef CPP_EX2_MAIN_GAME_H
 #define CPP_EX2_MAIN_GAME_H
 
+#include <iostream>
 #include "player.hpp" /// provides access to the Player class.
 
 namespace ariel {

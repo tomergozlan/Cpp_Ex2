@@ -3,7 +3,7 @@
 /// the headers guards ensure that this header file is only included once in the program.
 #ifndef CPP_EX2_MAIN_PLAYER_H
 #define CPP_EX2_MAIN_PLAYER_H
-
+#include <iostream>
 #include <string.h> /// provides the std::string class.
 
 using namespace std;

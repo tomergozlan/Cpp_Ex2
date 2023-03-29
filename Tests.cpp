@@ -1,11 +1,13 @@
 /// Created by tomergozlan on 3/24/23.
 
-#include "sources/player.h"
-#include "sources/game.h"
-
+#include "sources/player.hpp"
+#include "sources/game.hpp"
+#include "sources/card.hpp"
+#include <stdexcept>
 #include "doctest.h"
 #include <iostream>
 #include <string>
+
 
 using namespace ariel;
 using namespace std;
@@ -89,7 +91,15 @@ TEST_CASE("Test case 9: Test game ends correctly when one player has no cards le
     CHECK(game.printWiner() == "Bob" || game.printWiner() == "Alice");
 }
 
-TEST_CASE("Test case 10: Test printLog() prints only one line") {
+TEST_CASE("Test case 10: Test every Turn the players have 52 cards") {
+    Player p1("Bob");
+    Player p2("Alice");
+    Game game(p1, p2);
+    for (int i =0 ; i<10;i++){
+        game.playTurn();
+        CHECK(p1.stacksize()+p2.stacksize()+p1.cardesTaken()+p2.cardesTaken()==52);
+    }
+}
 
 
 

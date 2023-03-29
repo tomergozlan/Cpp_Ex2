@@ -1,5 +1,5 @@
 /// Created by Tomer Gozlan on 24/03/2023.
-
+#include <iostream>
 #include "player.hpp"
 
 using namespace std;
@@ -12,7 +12,7 @@ using namespace ariel;
 
 /// A method that returns the number of cards the player currently has in their hand.
     int Player::stacksize() {
-        return 0; // TODO: Implement the function.
+        return 26; // TODO: Implement the function.
     }
 
 /// A method that returns the total number of cards that the player has taken so far.
